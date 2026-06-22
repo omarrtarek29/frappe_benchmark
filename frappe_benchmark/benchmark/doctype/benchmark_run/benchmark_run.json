@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "autoname": "BRUN-.YYYY.-.#####",
+ "creation": "2026-06-22 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "run_date",
+  "total_time_seconds",
+  "column_break_1",
+  "customer_count",
+  "item_count",
+  "invoice_count",
+  "invoice_item_count",
+  "section_break_results",
+  "query_results"
+ ],
+ "fields": [
+  {
+   "fieldname": "run_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Run Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_time_seconds",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Time (seconds)",
+   "precision": "4"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_count",
+   "fieldtype": "Int",
+   "label": "Customer Count"
+  },
+  {
+   "fieldname": "item_count",
+   "fieldtype": "Int",
+   "label": "Item Count"
+  },
+  {
+   "fieldname": "invoice_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Invoice Count"
+  },
+  {
+   "fieldname": "invoice_item_count",
+   "fieldtype": "Int",
+   "label": "Invoice Item Count"
+  },
+  {
+   "fieldname": "section_break_results",
+   "fieldtype": "Section Break",
+   "label": "Query Results"
+  },
+  {
+   "fieldname": "query_results",
+   "fieldtype": "Code",
+   "label": "Query Results (JSON)",
+   "options": "JSON"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-06-22 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Benchmark",
+ "name": "Benchmark Run",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

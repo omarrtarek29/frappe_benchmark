@@ -1,1 +1,1 @@
-Frappe Benchmark
+Benchmark
