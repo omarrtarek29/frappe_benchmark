@@ -10,6 +10,13 @@ A generic benchmark toolkit for stress-testing any Frappe/ERPNext deployment (v1
 - **Interactive reports**: Desk-based Query Reports for manual stress testing
 - **Version compatible**: Works with Frappe v15 and v16
 
+## Infrastructure Guides (Multi-Server Setup)
+
+Simple step-by-step guides for running Frappe on separate servers:
+
+- [docs/01-redis-decoupling-guide.md](docs/01-redis-decoupling-guide.md) — when and how to move Redis off the app server
+- [docs/02-database-decoupling-guide.md](docs/02-database-decoupling-guide.md) — when and how to move MariaDB off the app server
+
 ## Installation
 
 ```bash
