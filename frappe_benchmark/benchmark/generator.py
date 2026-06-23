@@ -458,15 +458,12 @@ def drop_secondary_indexes(doctype: str) -> list:
 
 def rebuild_indexes(doctype: str) -> None:
 	"""
-	Rebuild indexes for a DocType by running migrate on it.
+	Rebuild indexes for a DocType table from its current meta.
 
 	Args:
 	    doctype: The DocType name.
 	"""
-	from frappe.model.sync import sync_for
-
-	app = frappe.get_meta(doctype).app or "frappe_benchmark"
-	sync_for(app, doctype, force=True)
+	frappe.db.updatedb(doctype)
 	frappe.db.commit()
 
 

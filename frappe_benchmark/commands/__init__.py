@@ -147,6 +147,7 @@ def _enqueue_invoice_batches(total: int, items_per_invoice: int, workers: int) -
 			queue="long",
 			timeout=3600 * 6,
 			count=count,
+			job_id=f"generate_invoices_{batch_prefix}_W{i}",
 			items_per_invoice=items_per_invoice,
 			batch_prefix=f"{batch_prefix}-W{i}",
 			start_offset=offset,
